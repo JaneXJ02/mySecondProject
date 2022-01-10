@@ -25,6 +25,7 @@ public class EmpController {
     @GetMapping("/query1/{deptno}/{sal}")
     public List<Emp> queryBy1(@PathVariable("deptno") Integer deptno, @PathVariable("sal")Integer sal){
 		system.out.print("查询一");
+		system.out.print("查询一一");
         return empReponsitory.find1(deptno,sal);
     }
 
