@@ -24,6 +24,7 @@ public class EmpController {
     //2.查询员工表中，工资大于2000，部门为20的员工信息。
     @GetMapping("/query1/{deptno}/{sal}")
     public List<Emp> queryBy1(@PathVariable("deptno") Integer deptno, @PathVariable("sal")Integer sal){
+		system.out.print("查询一");
         return empReponsitory.find1(deptno,sal);
     }
 
